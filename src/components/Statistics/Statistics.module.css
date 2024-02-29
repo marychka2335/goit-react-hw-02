@@ -1,0 +1,12 @@
+.feedbackText {
+  font-weight: 500;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.feedbackValue {
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
