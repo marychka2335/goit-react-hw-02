@@ -1,21 +1,19 @@
-import PropTypes from 'prop-types';
 import css from './FeedbackOptions.module.css';
 
-export function FeedbackOptions({ options, onLeaveFeedback }) {
+export const FeedbackOptions = ({ feedbackTypes, totalFeedback, positiveFeedbackPercentage }) => {
+
+
   return (
-    <div className={css.buttons}>
-      {options.map(item => {
-        return (
-          <button className={css.feedbackButton} key={item} name={item} onClick={onLeaveFeedback}>
-            {item}
-          </button>
-        );
-      })}
+    <div className={css.wrap}>
+      <div className={css.feedbackText}>
+        <p className={css.feedbackText}>Good: {feedbackTypes.good}</p>
+        <p className={css.feedbackText}>Neutral: {feedbackTypes.neutral}</p>
+        <p className={css.feedbackText}>Bad: {feedbackTypes.bad}</p>
+      </div>
+      <div className={css.feedbackValue}>
+        <p className={css.feedbackValue}>Total: {totalFeedback}</p>
+         Positive: {positiveFeedbackPercentage}%
+      </div>
     </div>
   );
-}
-
-FeedbackOptions.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.string),
-  onLeaveFeedback: PropTypes.func,
 };

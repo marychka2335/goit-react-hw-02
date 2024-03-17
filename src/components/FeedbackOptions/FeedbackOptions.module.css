@@ -1,18 +1,18 @@
-.buttons {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 30px;
+.wrap {
+  margin: 25px;
 }
 
-.feedbackButton {
-  display: block;
-  padding: 5px 10px;
-  text-transform: capitalize;
-  color: navy;
-  background-color: lightcyan;
-  border: transparent;
-  border-radius: 3px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
-  cursor: pointer;
+.feedbackText {
 
+  font-style: italic;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: lightblue;
+}
+
+.feedbackValue {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: lightblue;
 }
